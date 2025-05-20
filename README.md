@@ -79,6 +79,7 @@ Durante o projeto atuei como dev-team, com foco na lógica de negócio, persist�
 * **Elaboração dos Fluxogramas de Lógica do Sistema**  
   <details>
     Fui responsável por elaborar os fluxogramas que representam o comportamento e a navegação do sistema. Esses diagramas foram essenciais para alinhar a equipe quanto ao fluxo de dados, hierarquia de usuários (admin x comum) e ações permitidas em cada etapa do processo de avaliação.
+    
     [Clique aqui](https://github.com/iNineBD/Aval360-1Sem2023/wiki/Sprint-1-iNine)
   </details>
 
@@ -93,6 +94,7 @@ Durante o projeto atuei como dev-team, com foco na lógica de negócio, persist�
     - Um painel com seu desempenho individual
     - Um painel consolidado com os dados do time ao qual pertence  
     Esses painéis são gerados a partir dos dados das sprints avaliativas e foram importantes para garantir transparência e acompanhamento da evolução do time.
+    
     ![image](sources/api1_dash_integrantes.png)
   </details>
 
