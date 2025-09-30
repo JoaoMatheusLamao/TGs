@@ -79,7 +79,7 @@ Durante o projeto atuei como dev-team, com foco na lógica de negócio, persist�
 * **Elaboração dos Fluxogramas de Lógica do Sistema**  
   <details>
     Fui responsável por elaborar os fluxogramas que representam o comportamento e a navegação do sistema. Esses diagramas foram essenciais para alinhar a equipe quanto ao fluxo de dados, hierarquia de usuários (admin x comum) e ações permitidas em cada etapa do processo de avaliação.
-    
+
     [Clique aqui](https://github.com/iNineBD/Aval360-1Sem2023/wiki/Sprint-1-iNine)
   </details>
 
@@ -94,7 +94,7 @@ Durante o projeto atuei como dev-team, com foco na lógica de negócio, persist�
     - Um painel com seu desempenho individual
     - Um painel consolidado com os dados do time ao qual pertence  
     Esses painéis são gerados a partir dos dados das sprints avaliativas e foram importantes para garantir transparência e acompanhamento da evolução do time.
-    
+
     ![image](sources/api1_dash_integrantes.png)
   </details>
 
@@ -132,3 +132,85 @@ Durante o projeto atuei como dev-team, com foco na lógica de negócio, persist�
 * **Resolução de problemas** – Identifiquei e corrigi bugs relacionados ao armazenamento e leitura dos dados em JSON, garantindo que os cálculos e dashboards fossem precisos e confiáveis.
 
 * **Atenção aos detalhes (QA)** – Atuei como revisor técnico de pull requests, realizando testes manuais e validações para assegurar que novas funcionalidades estivessem corretas, funcionando conforme o esperado e alinhadas aos requisitos do backlog.
+
+---
+
+### Em 2023-2
+
+### Empresa Parceira 🫱🏻‍🫲🏻
+
+Este projeto foi desenvolvido no segundo semestre da Fatec São José dos Campos, com foco em resolver os desafios enfrentados pelo curso de Análise e Desenvolvimento de Sistemas no gerenciamento de Trabalhos de Graduação (TGs). A ausência de uma ferramenta prática e eficiente para acompanhar o progresso dos alunos dificultava a organização, a centralização das informações e o controle das etapas do processo.
+
+### Problema ‼️
+
+Antes da solução, o gerenciamento dos TGs apresentava os seguintes obstáculos:
+
+* Ausência de um sistema centralizado para acompanhamento dos alunos e orientadores  
+* Dificuldade na organização das entregas e prazos  
+* Falta de relatórios confiáveis para acompanhamento e tomada de decisão  
+* Processo manual e sujeito a erros de controle e registro  
+
+### Solução Entregue ✅
+
+Desenvolvemos o **Sistema Gerenciador de TGs (SGTGs)**, uma aplicação desktop em Java integrada a um banco de dados MySQL, que centralizou toda a gestão de TGs, permitindo:  
+
+* Importação de dados de alunos, orientadores e TGs via arquivo CSV  
+* Cadastro de entregas com validação de dados e prevenção de erros  
+* Gestão completa de alunos, orientadores, trabalhos e entregas em um único sistema  
+* Relatórios de acompanhamento para monitorar progresso e prazos  
+* Tela de **Aptos a Defender**, listando automaticamente apenas os alunos que cumpriram todos os requisitos no semestre  
+* Registro de notas, agendamento de bancas e consolidação dos resultados  
+
+O sistema trouxe mais organização e confiabilidade, automatizando tarefas que antes eram realizadas manualmente.  
+
+Repositório: [Clique aqui](https://github.com/iNineBD/SGTG-2Sem2023)
+
+#### Tecnologias Utilizadas
+
+* **Java**: Linguagem principal para o desenvolvimento da aplicação desktop.  
+* **Eclipse IDE**: Ambiente de desenvolvimento utilizado para estruturar e organizar o projeto.  
+* **MySQL**: Banco de dados relacional para armazenamento seguro e estruturado das informações de alunos, orientadores e entregas.  
+* **Scene Builder (JavaFX)**: Ferramenta para construção da interface gráfica da aplicação.  
+* **Figma**: Utilizado para prototipação das telas e definição do design da interface.  
+* **ClickUp**: Plataforma de gerenciamento de tarefas para acompanhamento de backlog, divisão de atividades e organização das entregas.  
+
+### Contribuições Pessoais
+
+Durante o projeto atuei como desenvolvedor, com foco na implementação de funcionalidades-chave ligadas à gestão de entregas e relatórios:
+
+* **Importação e Confirmação de Dados via CSV**  
+  <details>  
+  Desenvolvi a tela de confirmação dos dados dos alunos, carregados a partir da função “Carregar CSV”. Esse processo permitiu validar e inserir as informações no banco de forma estruturada.  
+  </details>  
+
+* **Cadastro de Entregas**  
+  <details>  
+  Implementei a funcionalidade de cadastramento de entregas, acessível pela barra superior em “Entregas → Nova Entrega”.  
+  A tela inclui filtros de validação para prevenir erros e, após o cadastro, os dados são salvos diretamente no banco de dados e exibidos em “Visualizar Entregas”.
+
+  ![image](sources/2sem1.gif)  
+  </details>  
+
+* **Relatório “Aptos a Defender”**  
+  <details>  
+  Desenvolvi o relatório que lista apenas os alunos aptos a defender seus TGs, com base no cumprimento de todas as entregas do semestre. Essa funcionalidade foi essencial para apoiar a coordenação e professores na organização das bancas.
+
+  <video src="sources/2sem2.mp4" controls width="600"></video>
+  </details>  
+
+#### Hard Skills
+
+* **Java** – Desenvolvimento de funcionalidades de back-end e front-end na aplicação desktop.  
+* **MySQL** – Estruturação de tabelas e persistência dos dados relacionados a alunos, orientadores, entregas e notas.  
+* **JavaFX + Scene Builder** – Criação e customização das telas da aplicação com foco em usabilidade.  
+* **Git/GitHub** – Controle de versão, organização de branches e integração com a equipe.  
+* **Figma** – Participação no design inicial e prototipação da interface gráfica.  
+* **ClickUp** – Organização e acompanhamento das tarefas seguindo uma metodologia ágil.  
+
+#### Soft Skills
+
+* **Comunicação** – Atuei com clareza no alinhamento das funcionalidades junto à equipe, garantindo consistência no desenvolvimento.  
+* **Trabalho em equipe** – Colaborei ativamente na integração entre banco de dados e interface, compartilhando conhecimento técnico e apoiando colegas.  
+* **Organização** – Mantive o fluxo de commits limpo e documentado, além de estruturar bem o código para fácil manutenção.  
+* **Resolução de problemas** – Desenvolvi mecanismos de validação e prevenção de erros no cadastro de entregas, assegurando confiabilidade no sistema.  
+* **Atenção aos detalhes** – Trabalhei em relatórios específicos (como o de aptos a defender), cuidando da precisão lógica e da exibição clara das informações.  
