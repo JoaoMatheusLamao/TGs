@@ -139,7 +139,7 @@ Durante o projeto atuei como dev-team, com foco na lógica de negócio, persist�
 
 ### Empresa Parceira 🫱🏻‍🫲🏻
 
-Este projeto foi desenvolvido no segundo semestre da Fatec São José dos Campos, com foco em resolver os desafios enfrentados pelo curso de Análise e Desenvolvimento de Sistemas no gerenciamento de Trabalhos de Graduação (TGs). A ausência de uma ferramenta prática e eficiente para acompanhar o progresso dos alunos dificultava a organização, a centralização das informações e o controle das etapas do processo.
+Este projeto foi desenvolvido no segundo semestre da Fatec São José dos Campos, com foco em resolver os desafios enfrentados pelo curso de Análise e Desenvolvimento de Sistemas no gerenciamento de Trabalhos de Graduação (TGs). O professor Emanuel Mineda foi o P1 e cliente A ausência de uma ferramenta prática e eficiente para acompanhar o progresso dos alunos dificultava a organização, a centralização das informações e o controle das etapas do processo.
 
 ### Problema ‼️
 
@@ -214,3 +214,95 @@ Durante o projeto atuei como desenvolvedor, com foco na implementação de funci
 * **Organização** – Mantive o fluxo de commits limpo e documentado, além de estruturar bem o código para fácil manutenção.  
 * **Resolução de problemas** – Desenvolvi mecanismos de validação e prevenção de erros no cadastro de entregas, assegurando confiabilidade no sistema.  
 * **Atenção aos detalhes** – Trabalhei em relatórios específicos (como o de aptos a defender), cuidando da precisão lógica e da exibição clara das informações.  
+
+---
+
+### Em 2024-1
+
+### Empresa Parceira 🫱🏻‍🫲🏻
+
+Este projeto foi desenvolvido em parceria com a empresa **Dom Rock**, que possui um sistema de processamento de dados em cascata chamado **pipeline**, composto por múltiplos estágios. O funcionamento da plataforma depende de configurações adequadas das fontes de dados, que até então eram realizadas de forma manual. Esse processo gerava grande consumo de tempo e alta dependência de especialistas técnicos, tornando a implantação menos ágil para os clientes.
+
+### Problema ‼️
+
+O processo de configuração manual das fontes de dados apresentava os seguintes problemas:
+
+* Alto consumo de tempo dos técnicos da Dom Rock  
+* Dependência excessiva de especialistas para configurações simples  
+* Processo propenso a erros devido à falta de padronização  
+* Dificuldade em oferecer maior autonomia para clientes e usuários não técnicos  
+
+### Solução Entregue ✅
+
+Foi desenvolvido o **DataFlow**, uma plataforma web para automatizar e simplificar a configuração das fontes de dados em diferentes estágios do pipeline, permitindo maior agilidade na implantação e reduzindo a dependência de técnicos especializados.  
+
+O sistema atendeu os principais requisitos do cliente, incluindo:  
+
+* Cadastro de clientes, soluções e usuários autorizados  
+* Interface para upload de dados CSV ou Excel, exibindo a estrutura (campos, tipos, regras de nulidade e descrições)  
+* Definição de chaves de identificação dos dados  
+* Interface “De/Para” para aplicação de regras comuns (ex.: mapear tipo de movimento 802 = transferência de estoque)  
+* Dashboard administrativo com visão quantitativa (clientes, tipos de fontes de dados, quantidade de campos, etc.)  
+* Visão analítica consolidada das configurações realizadas  
+
+O produto final contemplava o controle de **3 fases da ingestão de dados**: **Landing Zone**, **Bronze Zone** e **Silver Zone**, cada uma com telas específicas:  
+
+* **Validação Bronze Zone** – O usuário responsável aprova ou reprova os dados processados nessa etapa.  
+* **Bronze Zone (Agrupamento de Colunas)** – Permite ao usuário agrupar colunas relacionadas para identificar chaves de registros.  
+* **Silver Zone (Criar De/Para)** – O usuário seleciona um metadado e atribui valores relacionados. Após a configuração, o metadado deixa de aparecer disponível para seleção, garantindo consistência.  
+
+Repositório: [Clique aqui](https://github.com/iNineBD/DataFlow)
+
+#### Tecnologias Utilizadas
+
+* **Java (Spring Boot)** – Implementação do back-end, garantindo escalabilidade e integração com a lógica de negócio.  
+* **IntelliJ IDEA** – IDE principal para desenvolvimento back-end.  
+* **Vue.js (HTML5, CSS, JavaScript)** – Construção do front-end responsivo e dinâmico.  
+* **VS Code** – IDE utilizada para o desenvolvimento front-end.  
+* **Figma** – Criação de protótipos e definição de interface de usuário.  
+* **ClickUp** – Organização de backlog, tarefas e acompanhamento ágil do projeto.  
+* **Discord** – Canal de comunicação principal para reuniões e discussões técnicas.  
+* **Slack** – Utilizado para alinhamento adicional e comunicação com stakeholders.  
+* **Stack Overflow** – Fonte de pesquisa e suporte técnico durante o desenvolvimento.  
+
+### Contribuições Pessoais
+
+Atuei como desenvolvedor no projeto, com foco na implementação das funcionalidades que controlavam as diferentes fases da ingestão de dados:
+
+* **Tela de Validação Bronze Zone**  
+  <details>  
+  Implementei a lógica e interface para que o responsável pudesse aprovar ou reprovar os dados processados nesta etapa, garantindo controle de qualidade.
+
+  ![image](sources/3sem1.png)
+  </details>  
+
+* **Tela Bronze Zone (Agrupamento de Colunas)**  
+  <details>  
+  Desenvolvi a funcionalidade que permite relacionar colunas entre si, possibilitando a criação de chaves de identificação dos registros. Essa tela foi essencial para estruturar os dados de forma consistente.  
+
+  ![image](sources/3sem2.png)
+  </details>  
+
+* **Tela Criar De/Para – Silver Zone**  
+  <details>  
+  Implementei a tela de configuração de metadados, permitindo ao usuário atribuir valores específicos. Após a configuração, o metadado deixa de aparecer para seleção, evitando duplicidade.
+  
+  ![imagem](sources/3sem3.png)  
+  </details>  
+
+#### Hard Skills
+
+* **Java (Spring Boot)** – Desenvolvimento back-end robusto para atender às regras de negócio.  
+* **Vue.js (HTML5, CSS, JavaScript)** – Criação de interfaces interativas e responsivas.  
+* **MySQL (conceitual e integração)** – Apoio na modelagem e integração dos dados processados pelo sistema.  
+* **Git/GitHub** – Controle de versão com branches, PRs e integração contínua.  
+* **Figma** – Prototipação de telas e definição da experiência do usuário.  
+* **ClickUp** – Organização de backlog e acompanhamento das sprints.  
+
+#### Soft Skills
+
+* **Comunicação** – Interação constante com a equipe e stakeholders para validar requisitos e entregas.  
+* **Trabalho em equipe** – Integração das funcionalidades entre front-end e back-end, colaborando ativamente no desenvolvimento incremental.  
+* **Organização** – Estruturação de código e commits de forma clara e padronizada.  
+* **Resolução de problemas** – Implementação de soluções para validação de dados e consistência das regras de negócio.  
+* **Adaptabilidade** – Atuação em múltiplas frentes (back-end, front-end e design de interface) conforme a necessidade do time.  
