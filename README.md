@@ -306,3 +306,349 @@ Atuei como desenvolvedor no projeto, com foco na implementação das funcionalid
 * **Organização** – Estruturação de código e commits de forma clara e padronizada.  
 * **Resolução de problemas** – Implementação de soluções para validação de dados e consistência das regras de negócio.  
 * **Adaptabilidade** – Atuação em múltiplas frentes (back-end, front-end e design de interface) conforme a necessidade do time.  
+
+### Em 2024-2
+
+### Empresa Parceira 🫱🏻‍🫲🏻
+
+A empresa parceira enfrentava o desafio de armazenar e consultar dados de geolocalização em tempo real, continuamente gerados por dispositivos IoT como wearables, tags e smartphones. Esses dados são essenciais para o monitoramento de pessoas e ativos, exigindo um sistema capaz de lidar com grandes volumes de informações de forma escalável, confiável e segura.
+
+### Problema ‼️
+
+O cenário atual apresentava as seguintes dificuldades:
+
+* Grande volume de dados de geolocalização gerados continuamente  
+* Necessidade de armazenar e consultar informações em tempo real  
+* Falta de automação na gestão e configuração desses dados  
+* Dependência de técnicos especializados para manter a operação  
+* Baixa eficiência no monitoramento e rastreamento de pessoas e ativos  
+
+### Solução Entregue ✅
+
+Para enfrentar esses obstáculos, foi proposta a criação de uma plataforma especializada na gestão e configuração de dados de geolocalização em tempo real. Esta solução permite à empresa:
+
+* Automatizar a gestão dos dados de geolocalização  
+* Acelerar a implantação das operações  
+* Garantir a integridade, consistência e segurança das informações  
+* Reduzir a dependência de profissionais técnicos  
+* Otimizar o monitoramento de pessoas, ativos e dispositivos em tempo real  
+
+A plataforma desenvolvida possui funcionalidades que atendem aos requisitos principais, incluindo:
+
+* Identificação de pontos de parada de um dispositivo em um intervalo de tempo  
+* Consulta baseada em usuário, dispositivo e período  
+* Consulta aprimorada com filtragem por múltiplos usuários  
+* Visualização geográfica dos resultados em mapa interativo  
+* Interface de login e cadastro para controle de autenticação  
+* Mapeamento de rotas e player interativo para análise dinâmica dos deslocamentos  
+
+#### Tecnologias Utilizadas
+
+* **Java (Spring Boot)** – Estrutura principal do back-end.  
+* **Vue.js** – Construção do front-end interativo.  
+* **Node.js** – Suporte a funcionalidades auxiliares e serviços.  
+* **Oracle** – Banco de dados para armazenamento dos dados geográficos.  
+* **Docker** – Conteinerização e padronização do ambiente.  
+
+### Contribuições Pessoais
+
+Atuei como desenvolvedor no projeto, responsável pela implementação de funcionalidades essenciais para o processamento e visualização dos dados de geolocalização:
+
+* **Pontos de Parada**  
+  <details>  
+  Desenvolvi a lógica e a interface para identificar pontos em que um dispositivo permanece em uma mesma área por mais de 15 minutos, representados por “Marcadores”.  
+
+  A tela inicial apresenta um mapa acompanhado de uma aba lateral com opções de **Home** e **Filtrar**. Na área de filtros, o usuário pode realizar buscas por:  
+  * Usuário  
+  * Dispositivo  
+  * Período  
+
+  Após selecionar o usuário, dispositivo associado e intervalo de datas, o sistema exibe um ou vários pontos de parada referentes ao dispositivo em determinado período.
+  
+  ![image](sources/4sem1.png)
+  </details>
+
+* **Múltiplos Usuários**  
+  <details>  
+  Aprimorei o sistema de busca, permitindo a seleção simultânea de vários usuários.  
+
+  Com isso, tornou-se possível comparar diferentes trajetos, analisar padrões e enriquecer a experiência visual das consultas, tornando o sistema mais flexível e robusto.  
+
+  ![image](sources/4sem2.png)
+  </details>
+
+* **Login e Cadastro**  
+  <details>  
+  Implementei uma nova interface de autenticação com telas modernas e intuitivas, garantindo uma navegação simples e segura.  
+
+  Essa funcionalidade reforçou o controle de acesso e melhorou a experiência do usuário na entrada do sistema.  
+
+  ![image](sources/4sem3.png)
+  </details>
+
+* **Rotas + Player Interativo**  
+  <details>  
+  Desenvolvi a funcionalidade de exibição de rotas, fundamentais para analisar deslocamentos e trajetos.  
+
+  Além disso, implementei um player interativo que permite simular o movimento ao longo das rotas, com opções de pausar, ajustar velocidade e navegar entre pontos específicos.  
+
+  Essa funcionalidade tornou a análise espacial muito mais dinâmica, moderna e intuitiva.  
+
+  ![image](sources/4sem4.png)
+  </details>
+
+#### Hard Skills
+
+* **Java (Spring Boot)** – Construção de APIs e lógica de negócio.  
+* **Vue.js** – Desenvolvimento de interfaces interativas e responsivas.  
+* **Node.js** – Implementação de serviços auxiliares.  
+* **Oracle** – Modelagem e integração com banco de dados.  
+* **Docker** – Conteinerização de serviços.  
+* **Git/GitHub** – Controle de versão e organização de branches.  
+
+#### Soft Skills
+
+* **Comunicação** – Participação ativa em discussões técnicas e alinhamentos.  
+* **Trabalho em equipe** – Integração constante com membros de front-end e back-end.  
+* **Organização** – Manutenção de código limpo e padronizado.  
+* **Resolução de problemas** – Solução de desafios relacionados à manipulação de dados geográficos.  
+* **Adaptabilidade** – Atuação em múltiplas frentes e aprendizado contínuo de tecnologias.  
+
+### Em 2025-1
+
+### Empresa Parceira 🫱🏻‍🫲🏻
+
+A **Youtan**, empresa especializada em desenvolvimento de software, buscava aprimorar sua gestão de projetos utilizando a plataforma Taiga. Contudo, a equipe enfrentava dificuldades na visualização de indicadores essenciais do fluxo de trabalho, o que prejudicava o acompanhamento do progresso dos projetos e dificultava a tomada de decisões estratégicas.
+
+Além disso, a plataforma não oferecia nativamente um sistema robusto de diferenciação de acesso por níveis de usuário, impedindo a exibição de informações personalizadas para operadores, gestores e administradores.
+
+### Problema ‼️
+
+A empresa enfrentava os seguintes desafios:
+
+* Ausência de um painel centralizado de indicadores estratégicos  
+* Dificuldade para visualizar métricas como:  
+  * Quantidade de cards criados por período  
+  * Tempo médio de finalização  
+  * Distribuição de tarefas por colaborador  
+* Falta de diferenciação de acesso por tipo de usuário  
+* Pouca transparência na gestão e análise do fluxo de trabalho  
+* Processo de tomada de decisão prejudicado pela baixa visibilidade de dados  
+
+### Solução Entregue ✅
+
+A solução entregue consistiu no desenvolvimento de uma **plataforma integrada ao banco de dados do Taiga**, responsável por consolidar e exibir indicadores estratégicos sobre o andamento e produtividade dos times.
+
+A plataforma permite diferentes níveis de acesso:
+
+* **Operador** – Visualiza apenas seus próprios indicadores  
+* **Gestor** – Visualiza seus indicadores e os do seu time  
+* **Admin** – Acompanha todos os indicadores de todos os times  
+
+Além disso, foi desenvolvido um conjunto de **dashboards interativos**, permitindo análises detalhadas e facilitando o acompanhamento dos projetos de forma clara e objetiva.
+
+#### Tecnologias Utilizadas
+
+* **Figma** – Prototipação e design de interface  
+* **Java / Spring** – Back-end e lógica de negócios  
+* **Python** – Suporte e cálculos específicos de indicadores  
+* **PostgreSQL** – Armazenamento estruturado dos dados  
+* **Postman** – Testes de API  
+* **Vue.js / TypeScript / JavaScript / HTML5** – Construção da interface web  
+* **Visual Studio Code** – IDE principal para desenvolvimento front-end  
+* **Jira Software** – Organização de backlog e acompanhamento ágil  
+* **Discord** – Comunicação da equipe  
+
+### Contribuições Pessoais
+
+Atuei como desenvolvedor responsável pela implementação de diversos indicadores, funcionalidades analíticas e controles de acesso da plataforma:
+
+* **US01 – Indicadores por Etiqueta**  
+  <details>  
+  Desenvolvi um painel que exibe a quantidade de cards categorizados por etiqueta, permitindo identificar rapidamente quais categorias possuem maior volume de tarefas.
+
+  ![image](sources/5sem1.png)
+  </details>
+
+* **US02 – Indicadores Temporais**  
+  <details>  
+  Implementei visualizações relacionadas ao tempo de criação e finalização dos cards, adicionando filtros de período como último dia, semana e mês.
+
+  ![image](sources/5sem2.png)
+  </details>
+
+* **US03 – Indicadores por Status**  
+  <details>  
+  Adicionei gráficos que mostram a distribuição dos cards pelos status do fluxo Kanban (A Fazer, Em Andamento, Concluído).
+
+  ![image](sources/5sem3.png)
+  </details>
+
+* **US04 – Indicadores de Tempo Médio por Card**  
+  <details>  
+  Desenvolvi o cálculo automático do tempo médio gasto desde a criação até a finalização dos cards, permitindo a análise de eficiência do time.
+
+  ![image](sources/5sem4.png)
+  </details>
+
+* **US05 – Indicadores por Colaborador**  
+  <details>  
+  Implementei visualizações que permitem gestores e administradores acompanharem a produtividade individual de cada membro da equipe.
+
+  ![image](sources/5sem5.png)
+  </details>
+
+* **US06 – Indicadores por Time**  
+  <details>  
+  Desenvolvi a visão administrativa que exibe os indicadores consolidados de todos os times, possibilitando análises estratégicas.
+
+  ![image](sources/5sem6.png)
+  </details>
+
+* **US07 – Autenticação de Usuário**  
+  <details>  
+  Criei o sistema de login com autenticação segura, garantindo que somente usuários autorizados possam acessar a plataforma.
+
+  ![image](sources/5sem7.png)
+  </details>
+
+* **US08 – Gerenciamento de Contas de Usuário**  
+  <details>  
+  Desenvolvi a área administrativa para criação, edição e exclusão de contas, além de controle de permissões.
+
+  ![image](sources/5sem8.png)
+  </details>
+
+* **US09 – Indicadores do Operador**  
+  <details>  
+  Criei a visão dedicada ao operador, exibindo apenas seus indicadores individuais.
+
+  ![image](sources/5sem9.png)
+  </details>
+
+* **US10 – Indicadores de Retrabalho**  
+  <details>  
+  Implementei a visualização de retrabalho, permitindo identificar tarefas refeitas e analisá-las como métrica de eficiência.
+
+  ![image](sources/5sem10.png)
+  </details>
+
+* **US11 – User Stories por Sprint**  
+  <details>  
+  Desenvolvi um painel que exibe a quantidade de user stories por sprint, facilitando a análise de capacidade e planejamento.
+
+  ![image](sources/5sem11.png)
+  </details>
+
+* **US12 – Exportação de Indicadores em CSV**  
+  <details>  
+  Implementei um recurso de exportação dos indicadores para arquivo CSV, permitindo análises externas e armazenamento offline.
+
+  ![image](sources/5sem12.png)
+  </details>
+
+#### Hard Skills
+
+* **Java (Spring Boot)** – Desenvolvimento de APIs e lógica de negócio  
+* **Python** – Manipulação e análise de dados  
+* **Vue.js / TypeScript** – Criação de interfaces modernas e reativas  
+* **HTML5 / JavaScript** – Estruturação e dinamicidade do front-end  
+* **PostgreSQL** – Modelagem e consultas avançadas  
+* **Git/GitHub** – Controle de versão e fluxo colaborativo  
+* **Figma** – Estruturação visual e prototipação  
+
+#### Soft Skills
+
+* **Comunicação** – Interação constante com equipe e stakeholders  
+* **Trabalho em equipe** – Colaboração ativa no desenvolvimento integrado  
+* **Organização** – Estruturação clara de código e documentação  
+* **Resolução de problemas** – Criação de soluções eficientes para métricas complexas  
+* **Adaptabilidade** – Atuação em múltiplas frentes técnicas e de negócio  
+
+### Em 2025-2
+
+### Empresa Parceira 🫱🏻‍🫲🏻
+
+A **Pro4tech** identificou uma oportunidade estratégica em seu extenso histórico de tickets de suporte. No entanto, esses dados estavam desorganizados e sem estrutura, tornando impossível aproveitá-los de forma eficiente. Essa falta de organização gerava um ciclo de retrabalho: a equipe perdia tempo procurando soluções já existentes, e a liderança deixava de extrair insights valiosos para orientar decisões estratégicas.
+
+Existia a necessidade de transformar esse “conhecimento estagnado” em um ativo acessível, pesquisável e capaz de gerar valor real para a empresa.
+
+### Problema ‼️
+
+A empresa enfrentava os seguintes desafios:
+
+* Grande volume de tickets antigos sem organização  
+* Dificuldade para localizar soluções já registradas anteriormente  
+* Falta de uma base de conhecimento estruturada e pesquisável  
+* Retrabalho constante por parte da equipe de suporte  
+* Ausência de indicadores e insights sobre recorrência de problemas  
+* Impossibilidade de prever tendências ou antecipar falhas operacionais  
+
+### Solução Entregue ✅
+
+A solução proposta foi o desenvolvimento de um **sistema inteligente** capaz de transformar dados brutos e não estruturados dos tickets em uma base de conhecimento organizada e facilmente consultável.
+
+A plataforma oferece:
+
+* **Busca vetorizada (semantic search)** utilizando similaridade semântica  
+* **Organização automática dos tickets** por relevância e contexto  
+* **Acesso rápido a soluções de problemas recorrentes**  
+* **Dashboards e métricas inteligentes** para auxiliar a gestão na tomada de decisões  
+* **Sistema de login com controle de acesso e auditoria**  
+* **Previsão de problemas e identificação de tendências** com base no histórico  
+
+A combinação de motor semântico + painel de insights transforma os tickets antigos da empresa em uma poderosa fonte de conhecimento, aumentando a eficiência operacional e reduzindo custos.
+
+#### Tecnologias Utilizadas
+
+* **Elasticsearch** – Motor de busca vetorizada e indexação inteligente  
+* **Golang** – Implementação do back-end de alta performance  
+* **Python** – Processamento, vetorização e análises inteligentes  
+* **Vue.js / Nuxt** – Desenvolvimento do front-end dinâmico  
+* **Oracle** – Armazenamento estruturado de dados  
+* **Visual Studio Code** – Ambiente principal de desenvolvimento  
+* **Jira Software** – Organização do backlog e acompanhamento do projeto  
+
+### Contribuições Pessoais
+
+Durante o projeto, atuei diretamente na implementação de funcionalidades essenciais para transformar o histórico de tickets em um sistema inteligente e pesquisável.
+
+* **Painel com os Tickets – Busca Vetorizada**  
+  <details>  
+  Desenvolvi a integração da **busca vetorizada (semantic search)** no painel de tickets, permitindo que o usuário encontre resultados com base no **significado** da consulta, e não apenas por palavras exatas.
+
+  Isso tornou a pesquisa muito mais intuitiva e eficaz, mesmo para tickets antigos, incompletos ou escritos com terminologias diferentes.
+
+  ![image](sources/6sem1.png)
+  </details>
+
+* **Sistema de Login (JWT + Controle de Acesso)**  
+  <details>  
+  Implementei o sistema completo de autenticação utilizando **JWT (JSON Web Token)**, garantindo segurança no acesso e proteção das informações.
+
+  Minhas entregas incluíram:  
+  * Criação do fluxo de login e logout com tokens  
+  * Definição de níveis de acesso (usuário comum e administrador)  
+  * Controle de sessão  
+  * Integração com o módulo de auditoria para registrar eventos de autenticação  
+
+  ![image](sources/6sem2.png)
+  </details>
+
+#### Hard Skills
+
+* **Golang** – Desenvolvimento back-end performático  
+* **Elasticsearch** – Implementação de busca vetorial/semântica  
+* **Vue.js / Nuxt** – Criação de interfaces modernas  
+* **Python** – Processamento e vetorização de dados  
+* **Oracle** – Integração com banco de dados e modelagem  
+* **Git/GitHub** – Controle de versão e organização do código  
+* **JWT** – Implementação de autenticação segura  
+
+#### Soft Skills
+
+* **Comunicação** – Colaboração próxima com analistas, devs e stakeholders  
+* **Trabalho em equipe** – Desenvolvimento conjunto e integração entre módulos  
+* **Organização** – Estruturação de código, commits e documentação clara  
+* **Resolução de problemas** – Implementação de soluções avançadas de busca  
+* **Adaptabilidade** – Rapidez no aprendizado de novas tecnologias e frameworks  
