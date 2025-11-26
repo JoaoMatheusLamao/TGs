@@ -311,11 +311,11 @@ Atuei como desenvolvedor no projeto, com foco na implementação das funcionalid
 
 ### Empresa Parceira 🫱🏻‍🫲🏻
 
-A empresa parceira enfrentava o desafio de armazenar e consultar dados de geolocalização em tempo real, continuamente gerados por dispositivos IoT como wearables, tags e smartphones. Esses dados são essenciais para o monitoramento de pessoas e ativos, exigindo um sistema capaz de lidar com grandes volumes de informações de forma escalável, confiável e segura.
+A empresa parceira ITO1 enfrentava o desafio de armazenar e consultar dados de geolocalização em tempo real, continuamente gerados por dispositivos IoT como wearables, tags e smartphones. Esses dados são essenciais para o monitoramento de pessoas e ativos, exigindo um sistema capaz de lidar com grandes volumes de informações de forma escalável, confiável e segura.
 
 ### Problema ‼️
 
-O cenário atual apresentava as seguintes dificuldades:
+O cenário apresentava as seguintes dificuldades:
 
 * Grande volume de dados de geolocalização gerados continuamente  
 * Necessidade de armazenar e consultar informações em tempo real  
@@ -325,7 +325,7 @@ O cenário atual apresentava as seguintes dificuldades:
 
 ### Solução Entregue ✅
 
-Para enfrentar esses obstáculos, foi proposta a criação de uma plataforma especializada na gestão e configuração de dados de geolocalização em tempo real. Esta solução permite à empresa:
+Para enfrentar esses obstáculos, foi proposta a criação de uma plataforma especializada na gestão e configuração de dados de geolocalização em tempo real (GeoTrack). Esta solução permite à empresa:
 
 * Automatizar a gestão dos dados de geolocalização  
 * Acelerar a implantação das operações  
@@ -356,14 +356,9 @@ Atuei como desenvolvedor no projeto, responsável pela implementação de funcio
 
 * **Pontos de Parada**  
   <details>  
-  Desenvolvi a lógica e a interface para identificar pontos em que um dispositivo permanece em uma mesma área por mais de 15 minutos, representados por “Marcadores”.  
+  Desenvolvi a lógica para identificar pontos em que um dispositivo permanece em uma mesma área por mais de 15 minutos, representados por “Marcadores”.  
 
-  A tela inicial apresenta um mapa acompanhado de uma aba lateral com opções de **Home** e **Filtrar**. Na área de filtros, o usuário pode realizar buscas por:  
-  * Usuário  
-  * Dispositivo  
-  * Período  
-
-  Após selecionar o usuário, dispositivo associado e intervalo de datas, o sistema exibe um ou vários pontos de parada referentes ao dispositivo em determinado período.
+* O sistema permite ao usuário filtrar e consultar pontos de parada de dispositivos com base em diferentes critérios, como usuário, dispositivo e período. Após a seleção dos filtros desejados, são exibidos os pontos de parada identificados para o dispositivo no intervalo de tempo especificado, facilitando a análise e o monitoramento dos dados de geolocalização.*
   
   ![image](sources/4sem1.png)
   </details>
@@ -379,9 +374,9 @@ Atuei como desenvolvedor no projeto, responsável pela implementação de funcio
 
 * **Login e Cadastro**  
   <details>  
-  Implementei uma nova interface de autenticação com telas modernas e intuitivas, garantindo uma navegação simples e segura.  
+  Implementei toda a lógica de backend para autenticação e cadastro de usuários, incluindo validação de credenciais, controle de sessões e regras de acesso.  
 
-  Essa funcionalidade reforçou o controle de acesso e melhorou a experiência do usuário na entrada do sistema.  
+  Essa funcionalidade reforçou a segurança do sistema e garantiu que apenas usuários autorizados pudessem acessar as informações, contribuindo para um fluxo de autenticação robusto e confiável.  
 
   ![image](sources/4sem3.png)
   </details>
@@ -389,8 +384,6 @@ Atuei como desenvolvedor no projeto, responsável pela implementação de funcio
 * **Rotas + Player Interativo**  
   <details>  
   Desenvolvi a funcionalidade de exibição de rotas, fundamentais para analisar deslocamentos e trajetos.  
-
-  Além disso, implementei um player interativo que permite simular o movimento ao longo das rotas, com opções de pausar, ajustar velocidade e navegar entre pontos específicos.  
 
   Essa funcionalidade tornou a análise espacial muito mais dinâmica, moderna e intuitiva.  
 
@@ -461,88 +454,88 @@ Além disso, foi desenvolvido um conjunto de **dashboards interativos**, permiti
 
 ### Contribuições Pessoais
 
-Atuei como desenvolvedor responsável pela implementação de diversos indicadores, funcionalidades analíticas e controles de acesso da plataforma:
+Fui responsável pelo desenvolvimento do sistema ETL (Extract, Transform, Load) que alimentava o Data Warehouse (DW) central de indicadores. Todo o processamento, integração e consolidação dos dados para os indicadores era realizado por esse pipeline, garantindo que as informações estivessem sempre atualizadas e disponíveis para consumo pelos sistemas analíticos e dashboards. Não atuei diretamente no desenvolvimento de backend ou frontend.
 
 * **US01 – Indicadores por Etiqueta**  
   <details>  
-  Desenvolvi um painel que exibe a quantidade de cards categorizados por etiqueta, permitindo identificar rapidamente quais categorias possuem maior volume de tarefas.
+  Modelei e implementei o fluxo ETL responsável por extrair, transformar e carregar os dados de etiquetas dos cards para o DW, permitindo a geração de indicadores consolidados por categoria.
 
   ![image](sources/5sem1.png)
   </details>
 
 * **US02 – Indicadores Temporais**  
   <details>  
-  Implementei visualizações relacionadas ao tempo de criação e finalização dos cards, adicionando filtros de período como último dia, semana e mês.
+  Estruturei o pipeline ETL para consolidar dados temporais (datas de criação e finalização dos cards) no DW, possibilitando análises históricas e aplicação de filtros de período.
 
   ![image](sources/5sem2.png)
   </details>
 
 * **US03 – Indicadores por Status**  
   <details>  
-  Adicionei gráficos que mostram a distribuição dos cards pelos status do fluxo Kanban (A Fazer, Em Andamento, Concluído).
+  Modelei o processo ETL para mapear e consolidar os status dos cards no DW, permitindo a geração de indicadores por etapa do fluxo Kanban.
 
   ![image](sources/5sem3.png)
   </details>
 
 * **US04 – Indicadores de Tempo Médio por Card**  
   <details>  
-  Desenvolvi o cálculo automático do tempo médio gasto desde a criação até a finalização dos cards, permitindo a análise de eficiência do time.
+  Implementei a lógica de ETL para calcular e armazenar no DW o tempo médio entre criação e finalização dos cards, viabilizando análises de eficiência.
 
   ![image](sources/5sem4.png)
   </details>
 
 * **US05 – Indicadores por Colaborador**  
   <details>  
-  Implementei visualizações que permitem gestores e administradores acompanharem a produtividade individual de cada membro da equipe.
+  Modelei o fluxo ETL para consolidar dados de produtividade por colaborador no DW, permitindo análises detalhadas de desempenho individual.
 
   ![image](sources/5sem5.png)
   </details>
 
 * **US06 – Indicadores por Time**  
   <details>  
-  Desenvolvi a visão administrativa que exibe os indicadores consolidados de todos os times, possibilitando análises estratégicas.
+  Estruturei o pipeline ETL para consolidar e disponibilizar no DW os indicadores por time, facilitando análises estratégicas e comparativas.
 
   ![image](sources/5sem6.png)
   </details>
 
 * **US07 – Autenticação de Usuário**  
   <details>  
-  Criei o sistema de login com autenticação segura, garantindo que somente usuários autorizados possam acessar a plataforma.
+  Modelei o ETL para registrar e consolidar eventos de autenticação no DW, permitindo análises de acesso e segurança sem atuar diretamente no sistema de login.
 
   ![image](sources/5sem7.png)
   </details>
 
 * **US08 – Gerenciamento de Contas de Usuário**  
   <details>  
-  Desenvolvi a área administrativa para criação, edição e exclusão de contas, além de controle de permissões.
+  Estruturei o pipeline ETL para consolidar informações de contas e permissões no DW, viabilizando relatórios administrativos e de auditoria.
 
   ![image](sources/5sem8.png)
   </details>
 
 * **US09 – Indicadores do Operador**  
   <details>  
-  Criei a visão dedicada ao operador, exibindo apenas seus indicadores individuais.
+  Modelei o fluxo ETL para garantir que os dados individuais de cada operador fossem corretamente consolidados e disponibilizados no DW para análises personalizadas.
 
   ![image](sources/5sem9.png)
   </details>
 
 * **US10 – Indicadores de Retrabalho**  
   <details>  
-  Implementei a visualização de retrabalho, permitindo identificar tarefas refeitas e analisá-las como métrica de eficiência.
+  Estruturei o pipeline ETL para identificar e consolidar dados de retrabalho no DW, permitindo análises sobre eficiência e recorrência de tarefas refeitas.
 
   ![image](sources/5sem10.png)
   </details>
 
 * **US11 – User Stories por Sprint**  
   <details>  
-  Desenvolvi um painel que exibe a quantidade de user stories por sprint, facilitando a análise de capacidade e planejamento.
+  Modelei o ETL para consolidar no DW a quantidade de user stories por sprint, facilitando análises de capacidade e planejamento.
 
   ![image](sources/5sem11.png)
   </details>
 
 * **US12 – Exportação de Indicadores em CSV**  
   <details>  
-  Implementei um recurso de exportação dos indicadores para arquivo CSV, permitindo análises externas e armazenamento offline.
+  Estruturei o pipeline ETL para garantir que todos os indicadores do DW pudessem ser facilmente exportados para arquivos CSV, viabilizando análises externas e armazenamento offline.
 
   ![image](sources/5sem12.png)
   </details>
